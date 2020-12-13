@@ -23,7 +23,7 @@ function Row({title, fetchUrl, isLargeRow}) {
 
           <div className="row_posters">
             {movies.map(movie => (
-                <img src={`${base_url}${movie.poster_path}`}
+                <img src={`${base_url}${isLargeRow ? movie.poster_path:movie.backdrop_path}`}
                     alt={movie.name} 
                     className={`row_poster ${isLargeRow && "row_posterlarge"}`}
                     key={movie.id}
