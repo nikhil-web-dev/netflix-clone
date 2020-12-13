@@ -1,5 +1,5 @@
 
-import './App.css';
+import './css/App.css';
 import request from './requests';
 import Nav from './Nav'
 import Banner from './Banner'
@@ -17,6 +17,8 @@ function App() {
         <Row title="Action" fetchUrl={request.fetchActionMovies}/>
         <Row title="Comedy" fetchUrl={request.fetchComedyMovies}/>
         <Row title="Horror" fetchUrl={request.fetchHorrorMovies}/>
+        <Row title="Romance" fetchUrl={request.fetchRomanceMovies}/>
+        <Row title="Documenteries" fetchUrl={request.fecthDocumenteries}/>
     </div>
   );
 }
